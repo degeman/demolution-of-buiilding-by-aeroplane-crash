@@ -36,7 +36,7 @@ def road():
 
 def scene2():
     global d
-
+    glClear(GL_COLOR_BUFFER_BIT)
     draw_scene2(d)
    
 
@@ -54,42 +54,11 @@ def scene1():
     global e
     
     glClear(GL_COLOR_BUFFER_BIT)
+    
     road()
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-
-    rectangular_body()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    const_plane()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    outline_upper_triangle()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    lower_triangle()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    back_wing()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    left_wing()
-    glPopMatrix()
-
-    glPushMatrix()
-    glTranslated(a,c,0.0)
-    right_wing()
-    glPopMatrix()
+    draw_scene2(a,c)
+    
+    
     if(c>360):      #timer to jump to next display
         
         scene2()
