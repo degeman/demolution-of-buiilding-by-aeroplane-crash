@@ -19,28 +19,7 @@ def update():
     c+=15      #take off at certain angle on y axis
     if(b<=-78.0):   # moving of run way
         b=0.0
-    
-   
 
-
-    
-
-
-     
-
-
-
-    
-
-def scene2():
-    global d
-    
-    draw_scene2(d)
-   
-
-def scene3():
-    global e
-    draw_scene3(e)
    
     
 
