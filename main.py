@@ -23,14 +23,18 @@ def update():
    
 
 
-def road():
-    global b
-    draw_road(b)
+    
+
+
+     
+
+
+
     
 
 def scene2():
     global d
-    glClear(GL_COLOR_BUFFER_BIT)
+    
     draw_scene2(d)
    
 
@@ -40,22 +44,18 @@ def scene3():
    
     
 
-def scene1():
+
+    
+def control_scenes():
     global a
     global b
     global c
     global d
     global e
-    
-    glClear(GL_COLOR_BUFFER_BIT)
-    
-    road()
-    draw_scene2(a,c)
-    
-    
+    draw_scene1(a,b,c)
     if(c>360):      #timer to jump to next display
-        
-        scene2()
+        glClear(GL_COLOR_BUFFER_BIT)
+        draw_scene2(d)
         d+=20       #plane takeoff on x in 2nd display
         
     if(a>500.0):    #window position during take off
@@ -65,11 +65,11 @@ def scene1():
         
     if(c>750):          #timer to jump to 3rd display
         
-        scene3()
+        draw_scene3(e)
         e+=20           #plane takeoff on x in 3rd display
         if(e>250):      #timer to call blast function
             
-            demolution()
+            demolition()
             e=250
     glFlush()    
 
@@ -99,7 +99,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running=False
-        scene1()
+        control_scenes()
         update()
         pygame.display.flip()
         pygame.time.wait(180)

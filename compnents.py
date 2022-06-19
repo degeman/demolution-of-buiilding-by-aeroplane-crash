@@ -84,7 +84,7 @@ def building():
 
 # this will draw the demolution scene
       
-def demolution(): 
+def demolition(): 
     glPushMatrix()
     glTranslated(-10.0,-60.0,0.0)
     glColor3f(1.0,0.5,0.0)
