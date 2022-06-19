@@ -87,7 +87,7 @@ def building():
 def demolution(): 
     glPushMatrix()
     glTranslated(-10.0,-60.0,0.0)
-    glColor3f(1.0,0.0,0.0)
+    glColor3f(1.0,0.5,0.0)
     glBegin(GL_POLYGON)
     glVertex2f(404.4,320.0)
     glVertex2f(384.0,285.0)

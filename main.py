@@ -23,12 +23,6 @@ def update():
    
 
 
-    
-
-
-     
-
-
 def road():
     global b
     draw_road(b)
@@ -75,7 +69,7 @@ def scene1():
         e+=20           #plane takeoff on x in 3rd display
         if(e>250):      #timer to call blast function
             
-            blast()
+            demolution()
             e=250
     glFlush()    
 

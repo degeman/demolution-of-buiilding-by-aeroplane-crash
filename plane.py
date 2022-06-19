@@ -40,7 +40,7 @@ def outline_upper_triangle():
         glEnd()
 # draw the lower triangle
 def lower_triangle():
-        glColor3f(1.0,0.0,0.0)
+        glColor3f(0.0,0.0,0.0)
         glBegin(GL_POLYGON)
         glVertex2f(135.0,40.0)
         glVertex2f(160.0,40.0)
@@ -50,7 +50,7 @@ def lower_triangle():
         glEnd()
 # draw the back wing 
 def back_wing():
-        glColor3f(1.0,0.0,0.0)
+        glColor3f(0.0,0.0,0.0)
         glBegin(GL_POLYGON)
         glVertex2f(0.0,55.0)
         glVertex2f(0.0,80.0)
@@ -60,7 +60,7 @@ def back_wing():
 
 # this will draw the the left side wing
 def left_wing():
-        glColor3f(1.0,0.0,0.0)
+        glColor3f(0.0,0.0,0.0)
         glBegin(GL_POLYGON)
         glVertex2f(65.0,55.0)
         glVertex2f(50.0,70.0)
@@ -69,11 +69,10 @@ def left_wing():
         glEnd()
 # the right side wing
 def right_wing():
-        glColor3f(1.0,0.0,0.0)
+        glColor3f(0.0,0.0,0.0)
         glBegin(GL_POLYGON)
         glVertex2f(70.0,40.0)
         glVertex2f(100.0,40.0)
-
         glVertex2f(80.0,15.0)
         glVertex2f(50.0,15.0)
         glEnd()
